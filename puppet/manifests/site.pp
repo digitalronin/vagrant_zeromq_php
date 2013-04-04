@@ -1,7 +1,5 @@
-package { [
-    'build-essential',
-    'uuid-dev'
-  ]:
-  ensure => installed
-}
 
+exec { "apt-update": command => "/usr/bin/apt-get update" }
+
+import "zeromq"
+include zeromq
