@@ -2,7 +2,8 @@ class zeromq {
 
   package { [
       'build-essential',
-      'uuid-dev'
+      'uuid-dev',
+      'pkg-config'
     ]:
     ensure => installed
   }
