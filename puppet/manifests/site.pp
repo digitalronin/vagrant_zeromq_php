@@ -2,9 +2,9 @@
 # exec { "apt-update": command => "/usr/bin/apt-get update" }
 
 import "zeromq"
-import "rubygems"
+import "ruby"
 import "php"
 
 include zeromq
-include rubygems
+include ruby
 include php
