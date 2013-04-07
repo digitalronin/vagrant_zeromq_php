@@ -1,13 +1,5 @@
 class zeromq {
 
-  package { [
-      'build-essential',
-      'uuid-dev',
-      'pkg-config'
-    ]:
-    ensure => installed
-  }
-
   # put the build script in /root
   file { "/root/build_zeromq.sh":
     ensure => "present",
@@ -21,7 +13,7 @@ class zeromq {
     cwd     => "/root",
     timeout => 0,
     unless  => "/bin/ls /usr/local/include/zmq.h",
-    require => Package['uuid-dev']
+    require => [ Package['build-essential'], Package['uuid-dev'] ]
   }
 
 }
