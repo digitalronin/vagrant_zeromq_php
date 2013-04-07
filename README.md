@@ -1,7 +1,7 @@
 vagrant_zeromq_php
 ==================
 
-Vagrantfile and puppet recipes to create an Ubuntu 12.04 VM with ZeroMQ and its PHP bindings
+Vagrantfile and puppet recipes to create an Ubuntu 12.04 VM with PHP 5.3.10, ZeroMQ 3.2.2 and its PHP bindings.
 
 Pre-requisites
 --------------
